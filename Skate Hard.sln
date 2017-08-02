@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skate Hard.Plugins", "Skate Hard.Plugins.csproj", "{CBB6C239-7209-D972-54AC-8F12803DF85A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skate Hard", "Skate Hard.csproj", "{61ABA510-09EB-1B00-8599-91926661F2B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skate Hard.Editor.Plugins", "Skate Hard.Editor.Plugins.csproj", "{7C12BD13-707E-458D-9BFC-A710C0E081EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skate Hard.Editor", "Skate Hard.Editor.csproj", "{BA9D2960-4E5A-2B26-7723-162E41F22288}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBB6C239-7209-D972-54AC-8F12803DF85A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB6C239-7209-D972-54AC-8F12803DF85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB6C239-7209-D972-54AC-8F12803DF85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB6C239-7209-D972-54AC-8F12803DF85A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61ABA510-09EB-1B00-8599-91926661F2B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61ABA510-09EB-1B00-8599-91926661F2B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61ABA510-09EB-1B00-8599-91926661F2B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61ABA510-09EB-1B00-8599-91926661F2B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C12BD13-707E-458D-9BFC-A710C0E081EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C12BD13-707E-458D-9BFC-A710C0E081EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C12BD13-707E-458D-9BFC-A710C0E081EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C12BD13-707E-458D-9BFC-A710C0E081EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA9D2960-4E5A-2B26-7723-162E41F22288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9D2960-4E5A-2B26-7723-162E41F22288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9D2960-4E5A-2B26-7723-162E41F22288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9D2960-4E5A-2B26-7723-162E41F22288}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

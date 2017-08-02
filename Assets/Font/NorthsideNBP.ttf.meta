@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8a1f4d64f2da3a64b944a094c89348f8
+timeCreated: 1501296773
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: NorthsideNBP
+  fontNames:
+  - NorthsideNBP
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
