@@ -27,16 +27,22 @@ public class GameManager : MonoBehaviour {
     public void ChangeUIFromPreToPlaying()
     {
         gameStartText.SetActive(false);
+        deadText.SetActive(false);
+        winText.SetActive(false);
     }
 
     public void ChangeUIFromPlayingToWin()
     {
+        gameStartText.SetActive(false);
+        deadText.SetActive(false);
         winText.SetActive(true);
     }
 
     public void ChangeUIFromPlayingToDead()
     {
-        StartCoroutine(respawnTimer());
+        gameStartText.SetActive(false);
+        deadText.SetActive(true);
+        winText.SetActive(false);
     }
 
     IEnumerator respawnTimer()

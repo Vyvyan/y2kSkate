@@ -177,6 +177,9 @@
     <None Include="Assets\FX Mega Pack\Shaders\Particle AddAlphaBlended Mobile.shader" />
     <None Include="Assets\FX Mega Pack\Shaders\Particle AddAlphaBlended.shader" />
     <None Include="Assets\Gem\Shaders\Gem.shader" />
+    <None Include="Assets\Pixelation\Readme.txt" />
+    <None Include="Assets\Pixelation\Shaders\Chunky.shader" />
+    <None Include="Assets\Pixelation\Shaders\Pixelation.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />

@@ -91,6 +91,11 @@
     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
     <Compile Include="Assets\GemExample\Scripts\DemoTimeOfDay.cs" />
     <Compile Include="Assets\GemExample\Scripts\Orbit.cs" />
+    <Compile Include="Assets\Pixelation\Example\Scripts\ImageEffectBase.cs" />
+    <Compile Include="Assets\Pixelation\Example\Scripts\Plane.cs" />
+    <Compile Include="Assets\Pixelation\Example\Scripts\PointLight.cs" />
+    <Compile Include="Assets\Pixelation\Scripts\Chunky.cs" />
+    <Compile Include="Assets\Pixelation\Scripts\Pixelation.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -141,10 +146,12 @@
     <Compile Include="Assets\RoadTool\Scripts\RoadUtils.cs" />
     <Compile Include="Assets\Scripts\ActualCamFollowScript.cs" />
     <Compile Include="Assets\Scripts\CameraTargetObject.cs" />
+    <Compile Include="Assets\Scripts\CheatCode.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HeliTailRotor.cs" />
     <Compile Include="Assets\Scripts\HelicopterBladeSpin.cs" />
     <Compile Include="Assets\Scripts\HelicopterFloat.cs" />
+    <Compile Include="Assets\Scripts\Pixelation.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\SmoothCamera2D.cs" />
     <Compile Include="Assets\Scripts\SpinSpikeBalls.cs" />
@@ -157,6 +164,9 @@
     <None Include="Assets\FX Mega Pack\Shaders\Particle AddAlphaBlended Mobile.shader" />
     <None Include="Assets\FX Mega Pack\Shaders\Particle AddAlphaBlended.shader" />
     <None Include="Assets\Gem\Shaders\Gem.shader" />
+    <None Include="Assets\Pixelation\Readme.txt" />
+    <None Include="Assets\Pixelation\Shaders\Chunky.shader" />
+    <None Include="Assets\Pixelation\Shaders\Pixelation.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
