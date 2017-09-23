@@ -1,12 +1,24 @@
 fileFormatVersion: 2
 guid: a97bdcf094fff104d9f67b004b505dd0
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 21
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: BuckyBallAtoms
+    100004: BuckyBallLines
+    400000: //RootNode
+    400002: BuckyBallAtoms
+    400004: BuckyBallLines
+    2300000: BuckyBallAtoms
+    2300002: BuckyBallLines
+    3300000: BuckyBallAtoms
+    3300002: BuckyBallLines
     4300000: Atoms
     4300002: Lines
     4300004: BuckyBallLines
     4300006: BuckyBallAtoms
+    7400000: Default Take
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3
@@ -29,6 +41,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -36,7 +49,10 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -52,6 +68,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
