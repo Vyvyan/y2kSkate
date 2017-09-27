@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
     public GameObject gameStartText, deadText, winText, controlText;
     Image controlsImage;
     bool isFadingControlsImage;
+    float quitTimer;
 
     public bool canRestart;
 
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour {
         controlsImage = controlText.GetComponent<Image>();
         gameState = GameState.PreGame;
         canRestart = false;
+        quitTimer = 0;
 	}
 	
 	// Update is called once per frame
@@ -34,6 +36,21 @@ public class GameManager : MonoBehaviour {
                 c.a -= (2.5f * Time.deltaTime);
                 controlsImage.color = c;
             }
+        }
+
+        // quitting the game
+        if (Input.GetKey(KeyCode.Alpha1) && Input.GetKey(KeyCode.Alpha8))
+        {
+            quitTimer += Time.deltaTime;
+        }
+        else
+        {
+            quitTimer = 0;
+        }
+
+        if (quitTimer > 5)
+        {
+            Application.Quit();
         }
 	}
 
