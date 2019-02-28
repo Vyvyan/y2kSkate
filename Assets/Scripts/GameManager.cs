@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour {
         gameState = GameState.PreGame;
         canRestart = false;
         quitTimer = 0;
+
+        Cursor.visible = false;
 	}
 	
 	// Update is called once per frame
@@ -39,7 +41,7 @@ public class GameManager : MonoBehaviour {
         }
 
         // quitting the game
-        if (Input.GetKey(KeyCode.Alpha1) && Input.GetKey(KeyCode.Alpha8))
+        if (Input.GetKey(KeyCode.Alpha8))
         {
             quitTimer += Time.deltaTime;
         }

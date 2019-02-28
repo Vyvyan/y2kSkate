@@ -22,6 +22,8 @@ public class Player : MonoBehaviour {
 
     public GameObject deadBoard;
 
+    public int sceneToLoadOnRestart;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -41,6 +43,20 @@ public class Player : MonoBehaviour {
         // REMOVE THIS DEBUG
         if (Input.GetKeyDown(KeyCode.R))
         {        
+            SceneManager.LoadScene(sceneToLoadOnRestart);
+        }
+
+        // load different levels
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SceneManager.LoadScene(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
             SceneManager.LoadScene(0);
         }
 
