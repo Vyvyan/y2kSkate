@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -12,6 +13,9 @@ public class GameManager : MonoBehaviour {
     Image controlsImage;
     bool isFadingControlsImage;
     float quitTimer;
+    float loadlevel1Timer;
+    float loadlevel2Timer;
+    float loadlevel3Timer;
 
     public bool canRestart;
 
@@ -23,6 +27,7 @@ public class GameManager : MonoBehaviour {
         gameState = GameState.PreGame;
         canRestart = false;
         quitTimer = 0;
+        loadlevel1Timer = loadlevel2Timer = loadlevel3Timer = 0;
 
         Cursor.visible = false;
 	}
@@ -41,7 +46,7 @@ public class GameManager : MonoBehaviour {
         }
 
         // quitting the game
-        if (Input.GetKey(KeyCode.Alpha8))
+        if (Input.GetKey(KeyCode.Alpha8) && Input.GetKey(KeyCode.Escape))
         {
             quitTimer += Time.deltaTime;
         }
@@ -50,11 +55,59 @@ public class GameManager : MonoBehaviour {
             quitTimer = 0;
         }
 
-        if (quitTimer > 5)
+        if (quitTimer > 3)
         {
             Application.Quit();
         }
-	}
+
+        // loading easiest difficulty
+        // LEVELS are loaded in reverse order, so scene 2 = diff 1, scene 0 = lvl 3
+        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Alpha1))
+        {
+            loadlevel1Timer += Time.deltaTime;
+        }
+        else
+        {
+             loadlevel1Timer = 0;
+        }
+
+        if (loadlevel1Timer > 2)
+        {
+            SceneManager.LoadScene(2);
+        }
+
+        // loading medium difficulty
+        // LEVELS are loaded in reverse order, so scene 2 = diff 1, scene 0 = lvl 3
+        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Alpha2))
+        {
+            loadlevel2Timer += Time.deltaTime;
+        }
+        else
+        {
+            loadlevel2Timer = 0;
+        }
+
+        if (loadlevel2Timer > 2)
+        {
+            SceneManager.LoadScene(1);
+        }
+
+        // loading hardest difficulty
+        // LEVELS are loaded in reverse order, so scene 2 = diff 1, scene 0 = lvl 3
+        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Alpha3))
+        {
+            loadlevel3Timer += Time.deltaTime;
+        }
+        else
+        {
+            loadlevel3Timer = 0;
+        }
+
+        if (loadlevel3Timer > 2)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 
     public void ChangeUIFromPreToPlaying()
     {
